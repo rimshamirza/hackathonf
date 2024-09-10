@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <center><h1>Dynamic & Editable Resume Builder</h1></center>
+        <div class="form-container">
+            <form id="resume-form">
+                <h2>Personal Information</h2>
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="fullName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="profile-pic">Profile Picture:</label>
+                <input type="file" id="profile-pic" name="profilePic" accept="image/*">
+
+                <h2>Education</h2>
+                <div id="education-fields">
+                    <div class="education-entry">
+                        <input type="text" name="education[]" placeholder="Degree" required>
+                        <input type="text" name="institution[]" placeholder="Institution" required>
+                        <input type="text" name="year[]" placeholder="Year" required>
+                        <button type="button" class="remove-education">Remove</button>
+                    </div>
+                </div>
+                <button type="button" id="add-education">Add Education</button>
+
+                <h2>Skills</h2>
+                <textarea id="skills" name="skills" rows="4" placeholder="List your skills separated by commas" required></textarea>
+
+                <h2>Work Experience</h2>
+                <div id="work-fields">
+                    <div class="work-entry">
+                        <input type="text" name="jobTitle[]" placeholder="Job Title" required>
+                        <input type="text" name="company[]" placeholder="Company" required>
+                        <input type="text" name="duration[]" placeholder="Duration" required>
+                        <textarea name="jobDescription[]" rows="3" placeholder="Job Description" required></textarea>
+                        <button type="button" class="remove-work">Remove</button>
+                    </div>
+                </div>
+                <button type="button" id="add-work">Add Work Experience</button>
+
+                <button type="submit">Generate Resume</button>
+            </form>
+        </div>
+
+        <div class="resume-container" id="resume-container" style="display: none;">
+            <div class="resume">
+                <div class="header">
+                    <img id="resume-profile-pic" src="assets/default-profile.png" alt="Profile Picture">
+                    <h1 id="resume-full-name">Full Name</h1>
+                    <p id="resume-email">Email</p>
+                    <p id="resume-phone">Phone</p>
+                </div>
+                <div class="section" id="resume-education">
+                    <h2>Education</h2>
+                    <ul id="education-list">
+                        <!-- Education entries will go here -->
+                    </ul>
+                </div>
+                <div class="section" id="resume-skills">
+                    <h2>Skills</h2>
+                    <p id="skills-list">Skills</p>
+                </div>
+                <div class="section" id="resume-work-experience">
+                    <h2>Work Experience</h2>
+                    <ul id="work-list">
+                        <!-- Work entries will go here -->
+                    </ul>
+                </div>
+                <div class="actions">
+                    <button id="edit-resume">Edit</button>
+                    <button id="Shareable" a id="share-url" href="" target="_blank"></a>Shareable Resume</button>
+                    <button id="downloadPdfBtn">Download as PDF</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include jsPDF library for PDF generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

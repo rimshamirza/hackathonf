@@ -1,0 +1,177 @@
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b2c2e4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-container, .resume-container {
+
+    background:#e1f2f0;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    margin-top: 20px;
+    color: #555;
+  
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"],
+button[type="button"] {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+.education-entry, .work-entry {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 10px;
+    position: relative;
+    border-radius: 4px;
+}
+
+.remove-education,
+.remove-work {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.remove-education:hover,
+.remove-work:hover {
+    background-color: #c82333;
+}
+
+.resume {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.resume .header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.resume .header img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.resume .header h1 {
+    margin: 10px 0 5px 0;
+    font-size: 32px;
+}
+
+.resume .header p {
+    margin: 2px 0;
+    color: #666;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+    color: #007BFF;
+}
+
+.section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section ul li {
+    margin-bottom: 10px;
+}
+
+.actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.actions button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.actions button#download-pdf {
+    background-color: #17a2b8;
+}
+
+.actions button:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .resume .header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .resume .header h1 {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HACKATHON</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center><h1>Static Resume Builder</h1></center>
+    <div class="container1">
+        <!-- Personal Information Section -->
+        <section class="personal-info">
+             <img src="./images/profile.jpg" alt="Profile Picture" class="profile-pic">
+            <h1>RIMSHA MIRZA</h1>
+            <div class="w3-container">
+                <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Front-End Developer</p>
+                <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Karachi, Pakistan</p>
+                <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>Ruimshamirza@gmail.com</p>
+                <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+92 3398765666</p>
+                <hr>
+            
+        </section>
+
+    
+        <!-- Skills Section -->
+        <section>
+            <div class="container0">
+                <!-- Button section with three side-by-side buttons -->
+                <div class="button-container">
+                    <button id="toggleButton1" onclick="toggleList('hiddenList1')">Skills</button>
+                    <!-- Hidden lists -->
+                <ul id="hiddenList1" style="display: none;">
+                    <h2>Skills</h2>
+                    <li><p>HTML</p>
+                        <div class="containe">
+                          <div class="skills html">90%</div>
+                        </div></li>
+                    <li><p>CSS</p>
+                        <div class="containe">
+                          <div class="skills css">  80%</div>
+                        </div></li>
+                    <li><p>JavaScript</p>
+                        <div class="containe">
+                          <div class="skills js">  65%</div>
+                        </div></li>
+                    <li><p>TypeScript</p>
+                        <div class="containe">
+                          <div class="skills ts">40%</div>
+                        </div></p>
+                    </div>
+         </li>
+            
+                </ul>
+                    <button id="toggleButton2" onclick="toggleList('hiddenList2')">Education</button>
+                    
+                <ul id="hiddenList2" style="display: none;">
+                    <h2>Education</h2>
+                    <div class="education-item">
+                        <h3>Bachelor of Software Engineering</h3>
+                        <p>Jinnah University For Women Nazimabad</p>
+                            <i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2014- Dec 2017</h6></p>
+                    </div></li>
+                    <div class="education-item">
+                        <h3>Master of Software Engineering</h3>
+                        <p>Jinnah University For Women Nazimabad</p>
+                            <i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2018- Aug 2020</h6></p>
+                    </div></li>
+                    
+                </ul>
+        
+                    <button id="toggleButton3" onclick="toggleList('hiddenList3')">Experience</button>
+                    <ul id="hiddenList3" style="display: none;">
+                    
+                        <h2>Work Experience</h2>
+                       <li><div class="work-item">
+                            <h3>Front-End Developer</h3>
+                            <p>Tech Company Inc. (2022 - Present)</p>
+                            <ul>
+                                <li>Developed web applications using Html, Css ,Javascript</li>
+                                <li>Collaborated with cross-functional teams to deliver products</li>
+                                <li>Maintained and improved existing codebase</li>
+                            </ul>
+                        </div></li>
+                    <li><div class="work-item">
+                        <h3>Intern Developer</h3>
+                        <p>Startup Netsol (2019 - 2020)</p>
+                        <ul>
+                            <li>Worked on various small projects with a focus on front-end development</li>
+                            <li>Learned agile development methodologies</li>
+                        </ul>
+                    </div>
+                </li>
+            
+                </ul>
+                </div>
+
+        
+                
+                
+            </div>
+        </section>
+    </div>
+
+    
+
+    <script src="function.js"></script>
+</body>
+</html>

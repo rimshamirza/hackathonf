@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic Resume Builder</h1>
+
+        <!-- Form for user input -->
+        <form id="resumeForm">
+            <h2>Personal Information</h2>
+            <label for="profilePicture">Profile Picture:</label>
+            <input type="file" id="profilePicture" name="profilePicture" accept="image/*">
+            <img id="profilePicPreview" src="" alt="Profile Picture Preview" style="display: none; width: 150px; height: 150px; border-radius: 50%; margin-bottom: 20px;">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="profile">Profile Summary:</label>
+            <textarea id="profile" name="profile" rows="3"></textarea>
+
+            <h2>Education</h2>
+            <label for="degree">Degree:</label>
+            <input type="text" id="degree" name="degree" required>
+
+            <label for="yearOfPassing">Year of Passing:</label>
+            <input type="text" id="yearOfPassing" name="yearOfPassing" required>
+
+            <label for="institution">Institution:</label>
+            <input type="text" id="institution" name="institution" required>
+            
+            <h2>Work Experience</h2>
+            <label for="jobTitle">Job Title:</label>
+            <input type="text" id="jobTitle" name="jobTitle" required>
+            
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company" required>
+            
+            <label for="yearsWorked">Years Worked:</label>
+            <input type="text" id="yearsWorked" name="yearsWorked" required>
+
+            <h2>Skills</h2>
+            <label for="skills">Skills:</label>
+            <input type="text" id="skills" name="skills" placeholder="Comma-separated skills" required>
+            <button>
+            <a href="resume.html" class="button1" onclick="">Generate Resume</a>
+        </button> 
+        
+            
+        </form>
+
+        <!-- Section where the generated resume will be displayed -->
+        <div id="resume" class="resume-output"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
